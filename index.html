@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>India's Water Crisis</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="crisis.html">The Crisis</a></li>
+        <li><a href="stats.html">Statistics</a></li>
+        <li><a href="statewise.html">State-Wise</a></li>
+        <li><a href="solutions.html">Solutions</a></li>
+        <li><a href="help.html">Cry for Help</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <img src="Water-crisis-India.avif" alt="Water Crisis India" class="banner-image">
+  </header>
+
+  <main>
+    <section class="intro">
+      <h1>India's Water Crisis: A Growing Catastrophe</h1>
+      <p>India is facing one of the worst water crises in its history. Millions of people are suffering due to water scarcity, and many regions are running dry. From agriculture to daily consumption, the demand for water is ever-increasing while our sources are rapidly depleting.</p>
+      <p>According to NITI Aayog, nearly 600 million Indians face high to extreme water stress, and about 200,000 people die every year due to inadequate access to safe water. By 2030, the country's water demand is projected to be twice the available supply, implying severe water scarcity for hundreds of millions.</p>
+    </section>
+
+    <section class="chart-section">
+      <h2>Annual Groundwater Depletion (2010-2023)</h2>
+      <canvas id="barChart"></canvas>
+    </section>
+
+    <section class="chart-section">
+      <h2>Usage of Water Resources by Sector</h2>
+      <canvas id="pieChart"></canvas>
+    </section>
+
+    <section class="chart-section">
+      <h2>State-Wise Water Availability (2024)</h2>
+      <canvas id="dottedChart"></canvas>
+    </section>
+
+    <section class="image-highlight">
+      <img src="Drought-In-India.avif" alt="Drought Area in India">
+    </section>
+
+    <section class="action">
+      <h2>Call to Action</h2>
+      <p>India must adopt aggressive water conservation practices, implement rainwater harvesting, treat and reuse wastewater, and reform irrigation techniques in agriculture. Citizens must also be made aware and involved in the effort.</p>
+    </section>
+
+    <section class="form-section">
+      <h2>Join the Movement</h2>
+      <form action="submit.py" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Message:</label>
+        <textarea name="message" id="message" rows="4"></textarea>
+
+        <input type="submit" value="Submit">
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Save Water India. All rights reserved.</p>
+  </footer>
+</body>
+</html>
